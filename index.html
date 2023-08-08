@@ -8,6 +8,44 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>AA</h1>
+    <section>
+      <form class="form" id="birth-form">
+        <div class="form-group">
+          <label for="day">DAY</label>
+          <input
+            name="day"
+            type="number"
+            id="day"
+            placeholder="DD"
+            min="1"
+            max="31"
+          />
+        </div>
+        <div class="form-group">
+          <label for="month">MONTH</label>
+          <input
+            name="month"
+            type="number"
+            id="month"
+            placeholder="MM"
+            min="1"
+            max="12"
+          />
+        </div>
+        <div class="form-group">
+          <label for="year">YEAR</label>
+          <input name="year" type="number" id="year" placeholder="YYYY" />
+        </div>
+        <button class="btn" id="submit-btn">
+          <img src="assets/images/icon-arrow.svg" alt="arrow button" />
+          <div class="divider"></div>
+        </button>
+      </form>
+      <div class="show">
+        <p class="show-year"><span>- - </span> years</p>
+        <p class="show-month"><span>- - </span> months</p>
+        <p class="show-day"><span>- - </span> days</p>
+      </div>
+    </section>
   </body>
 </html>
